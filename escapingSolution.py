@@ -1,4 +1,4 @@
-# By using '\n' can line feed
+﻿# By using '\n' can line feed
 # By using '\t' can make tab(4 blankspace)
 # By using '\r' can enter(overwrite last word)
 # By using '\b' can back one space

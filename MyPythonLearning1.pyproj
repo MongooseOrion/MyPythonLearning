@@ -5,7 +5,7 @@
     <ProjectGuid>6147b62b-f149-4541-bd2f-bcf884c788f4</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Variable.py</StartupFile>
+    <StartupFile>5operatorAND.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +22,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="EncodeANDIdentifier.py" />
-    <Compile Include="escapingSolution.py" />
-    <Compile Include="printSolution.py" />
-    <Compile Include="Variable.py" />
+    <Compile Include="3EncodeANDIdentifier.py" />
+    <Compile Include="2escapingSolution.py" />
+    <Compile Include="1printSolution.py" />
+    <Compile Include="4VariableANDdata.py" />
+    <Compile Include="5operatorAND.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

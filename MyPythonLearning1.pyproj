@@ -5,7 +5,7 @@
     <ProjectGuid>6147b62b-f149-4541-bd2f-bcf884c788f4</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>6SelectStructureDesign.py</StartupFile>
+    <StartupFile>7LoopStructureDesign.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,7 @@
     <Compile Include="5operator.py" />
     <Compile Include="6SelectStructureDesign.py" />
     <Compile Include="7LoopStructureDesign.py" />
+    <Compile Include="8List_1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

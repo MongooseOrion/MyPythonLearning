@@ -33,6 +33,7 @@
     <Compile Include="9List_2.py" />
     <Compile Include="10Dictionary.py" />
     <Compile Include="11TupleANDSet.py" />
+    <Compile Include="12CharacterString.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

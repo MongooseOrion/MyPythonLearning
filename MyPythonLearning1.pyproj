@@ -5,7 +5,7 @@
     <ProjectGuid>6147b62b-f149-4541-bd2f-bcf884c788f4</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>11TupleANDSet.py</StartupFile>
+    <StartupFile>12CharacterString.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

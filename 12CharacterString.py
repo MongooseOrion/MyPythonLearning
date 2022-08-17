@@ -128,6 +128,43 @@ list1=['>','>=','<','<=','==','!=']     # 有这些运算符
 chr7='Hello world Python'
 option1=chr7[:5]
 option2=chr7[6:]
+chr14='!'
+option3=option1+option2+chr14
 
 print(option1)
 print(option2)
+print(option3)
+
+option4=chr7[1:8:2]
+print(option4)
+print('<-------------------------------------------->')
+
+#
+# 为字符串添加格式
+#
+name='Li Hua'
+age=21
+print('My name is %s, and I am %d years old.' % (name,age))         # 元组
+print('My name is {0}, and I am {1} years old.'.format(name,age))   # 使用format()函数
+print(f'My name is {name}, and I am {age} years old.')              # 使用f-string格式
+
+# 表示数据位数，方法一
+print('%10d' % 120001)      # 宽度，大于数宽度则加空格，小于数宽度则返回本身
+print('%1.2f' % 12.3475)    # 小数位为几就截断几位小数位（会四舍五入）
+print('%20s'%'hello world') # 多则加空格，少则返回本身
+
+# 方法二
+print('{0:0.3f} {1:0.4f}'.format(3.14123,2.71828))      # 使用format()函数以截断
+
+
+#
+# 字符串编码转换
+#
+# 编码
+chr15='床前明月光'
+print(chr15.encode(encoding='GBK'))             # GBK编码一个中文字符占两个字节
+print(chr15.encode(encoding='UTF-8'))           # UTF-8一个中文字符占三个字节
+
+# 解码
+byte=b'\xb4\xb2\xc7\xb0\xc3\xf7\xd4\xc2\xb9\xe2'    # 某一串字符串二进制编码
+print(byte.decode(encoding='GBK'))                  # 编码解码格式一定要相同

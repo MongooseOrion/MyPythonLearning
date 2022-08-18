@@ -5,7 +5,7 @@
     <ProjectGuid>6147b62b-f149-4541-bd2f-bcf884c788f4</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>14BugANDExceptionHandle.py</StartupFile>
+    <StartupFile>15Class.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,20 +22,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="3EncodeANDIdentifier.py" />
-    <Compile Include="2escapingCharacter.py" />
-    <Compile Include="1printKeyword.py" />
-    <Compile Include="4VariableANDdata.py" />
-    <Compile Include="5operator.py" />
-    <Compile Include="6SelectStructureDesign.py" />
-    <Compile Include="7LoopStructureDesign.py" />
-    <Compile Include="8List_1.py" />
-    <Compile Include="9List_2.py" />
+    <Compile Include="03EncodeANDIdentifier.py" />
+    <Compile Include="02escapingCharacter.py" />
+    <Compile Include="01printKeyword.py" />
+    <Compile Include="04VariableANDdata.py" />
+    <Compile Include="05operator.py" />
+    <Compile Include="06SelectStructureDesign.py" />
+    <Compile Include="07LoopStructureDesign.py" />
+    <Compile Include="08List_1.py" />
+    <Compile Include="09List_2.py" />
     <Compile Include="10Dictionary.py" />
     <Compile Include="11TupleANDSet.py" />
     <Compile Include="12CharacterString.py" />
     <Compile Include="13Function.py" />
     <Compile Include="14BugANDExceptionHandle.py" />
+    <Compile Include="15Class.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

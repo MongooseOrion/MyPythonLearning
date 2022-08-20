@@ -31,5 +31,5 @@
 * [14BugANDExceptionHandle.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/14BugANDExceptionHandle.py)
   > Python 异常处理机制
 * [15Class.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/15Class.py)
-  > 类
+  > 类与对象
 ## 版本号解释

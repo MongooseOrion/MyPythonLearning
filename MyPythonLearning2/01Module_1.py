@@ -8,5 +8,9 @@ print(dir(math))            # 查看math的所有属性
 print(math.pow(2,3))        # 指的是2^3
 print(math.ceil(9.001))     # 向上取整
 print(math.floor(9.999))    # 向下取整
+print('<-------------------------------------------------->')
 
-from math import pi
+from math import pi         # 选择导入某模块中的参数
+print(pi)
+
+# import 00main

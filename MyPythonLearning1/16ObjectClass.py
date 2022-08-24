@@ -170,5 +170,19 @@ class Computer:
         self.cpu=cpu
         self.disk=disk 
 
-cpu1=CPU()
+cpu1=CPU()                              # cpu1创建的CPU的实例对象，类指针指向CPU类
 cpu2=cpu1
+disk=Disk()                             # Disk创建的disk实例对象，类指针指向Disk类
+computer=Computer(cpu1,disk)            # Computer创建的computer实例对象
+
+# 浅拷贝
+import copy
+computer2=copy.copy(computer)           # computer2重新拷贝一份，地址变了
+print(computer,computer.cpu,computer.disk)      # 内部值（子对象）指向同一个cpu，disk
+print(computer2,computer2.cpu,computer2.disk)   # 内部值指向同一个cpu，disk，因此地址不变
+
+# 深拷贝
+computer3=copy.deepcopy(computer)               # 地址发生改变
+print(computer,computer.cpu,computer.disk)      # 子对象指向不同cpu，disk
+print(computer3,computer3.cpu,computer3.disk)   # 地址发生改变
+

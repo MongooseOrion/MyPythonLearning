@@ -1,11 +1,12 @@
-
-import math                 # µ¼ÈëÊıÑ§³£ÊıÄ£¿é
+ï»¿
+import math                 # å¯¼å…¥æ•°å­¦å¸¸æ•°æ¨¡å—
 print(id(math))
 print(type(math))
 print(math)
 print(math.e)
-print(dir(math))            # ²é¿´mathµÄËùÓĞÊôĞÔ
-print(math.pow(2,3))        # Ö¸µÄÊÇ2^3
-print(math.ceil(9.001))     # ÏòÉÏÈ¡Õû
-print(math.floor(9.999))    # ÏòÏÂÈ¡Õû
+print(dir(math))            # æŸ¥çœ‹mathçš„æ‰€æœ‰å±æ€§
+print(math.pow(2,3))        # æŒ‡çš„æ˜¯2^3
+print(math.ceil(9.001))     # å‘ä¸Šå–æ•´
+print(math.floor(9.999))    # å‘ä¸‹å–æ•´
 
+from math import pi

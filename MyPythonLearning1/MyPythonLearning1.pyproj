@@ -38,6 +38,7 @@
     <Compile Include="14BugANDExceptionHandle.py" />
     <Compile Include="15Class.py" />
     <Compile Include="16ObjectClass.py" />
+    <Compile Include="17PackageANDDirectory.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

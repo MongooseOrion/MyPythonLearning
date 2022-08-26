@@ -43,11 +43,11 @@ print('<----------------------------------------------->')
 #
 # 使用在线 Python 模块，须在“搜索路径”中添加扩展所在的路径
 #
-import schedule
+import schedule                             # 在线下载的模块
 import time
 def job():
     print('渐进式打印，每隔3秒打印')
-schedule.every(3).seconds.do(job)           # 单位为秒
+schedule.every(3).seconds.do(job)           # 单位为秒,每隔3秒执行一次
 while True:
     schedule.run_pending()
-    time.sleep(1)
+    time.sleep(1)                           # 延迟1秒

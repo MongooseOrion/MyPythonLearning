@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe7d50b6-8347-4a40-8f13-ca4063980481</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Module_1.py</StartupFile>
+    <StartupFile>Module_3.py</StartupFile>
     <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -28,6 +28,8 @@
     </Compile>
     <Compile Include="package1\Module_subP1_1.py" />
     <Compile Include="Module_2.py" />
+    <Compile Include="Module_3.py" />
+    <Compile Include="Module_4.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
@@ -51,6 +53,12 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alipay.ico" />
+    <Content Include="copy_alipay.ico" />
+    <Content Include="TextFile1.txt" />
+    <Content Include="TextFile2.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

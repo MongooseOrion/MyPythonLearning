@@ -4,13 +4,13 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe7d50b6-8347-4a40-8f13-ca4063980481</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Module_3.py</StartupFile>
+    <StartupFile>Module_5.py</StartupFile>
     <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MyPythonLearning2</Name>
     <RootNamespace>MyPythonLearning2</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +30,7 @@
     <Compile Include="Module_2.py" />
     <Compile Include="Module_3.py" />
     <Compile Include="Module_4.py" />
+    <Compile Include="Module_5.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
@@ -57,6 +58,7 @@
   <ItemGroup>
     <Content Include="alipay.ico" />
     <Content Include="copy_alipay.ico" />
+    <Content Include="copy_alipay_2.ico" />
     <Content Include="TextFile1.txt" />
     <Content Include="TextFile2.txt" />
   </ItemGroup>

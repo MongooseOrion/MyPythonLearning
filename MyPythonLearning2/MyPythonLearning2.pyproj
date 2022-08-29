@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe7d50b6-8347-4a40-8f13-ca4063980481</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Module_5.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -30,7 +31,6 @@
     <Compile Include="Module_2.py" />
     <Compile Include="Module_3.py" />
     <Compile Include="Module_4.py" />
-    <Compile Include="Module_5.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />

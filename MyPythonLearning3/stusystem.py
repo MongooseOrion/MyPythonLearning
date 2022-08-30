@@ -198,7 +198,7 @@ def delete():
                 print('库文件不存在或为空，请导入信息后重试。')
                 break
             show()                              # 删除之后重新显示所有学生信息
-            answer=input('是否继续删除？ ')
+            answer=input('\n是否继续删除？ ')
             if answer=='yes' or answer=='是' or answer=='y' or answer=='Y':
                 continue
             else:

@@ -60,6 +60,7 @@ for num5 in range(100,1000):
         print('该数为水仙花数：',num5)
 print('<-------------这是一个分隔符------------>')
 
+# 密码
 for num7 in range(3):
     pwd=int(input('please enter the password:'))
     if pwd==8888:
@@ -77,8 +78,18 @@ for i in range(1,10):       # 行
     while j<=i:             # 列
         result=i*j
         #print(i,'x',j,'=',result,end='\t')          # end不换行输出
-        print(str(i)+'x'+str(j)+'='+str(result),end='\t')
+        print(str(j)+'x'+str(i)+'='+str(result),end='\t')
         j+=1
     print('\n')
 print('<------------------------------------>')
 
+
+#
+# 千年虫问题
+#
+year1=[82,89,87,76,82,99,00,78]
+for index,value in enumerate(year1):                # 将列表中的索引和对应的值相关联
+    print(index,value)
+    if str(value)=='0':
+        year1[index]='00'
+print(year1)

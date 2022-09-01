@@ -31,6 +31,7 @@
     <Compile Include="Module_2.py" />
     <Compile Include="Module_3.py" />
     <Compile Include="Module_4.py" />
+    <Compile Include="Module_5.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />

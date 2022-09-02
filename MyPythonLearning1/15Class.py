@@ -73,3 +73,5 @@ def exp():
     print('Default funtion1.')
 stu1.func1=exp                      # 为stu1创建一个新的方法，绑定函数exp()
 stu1.func1()                        # 调用该方法
+
+

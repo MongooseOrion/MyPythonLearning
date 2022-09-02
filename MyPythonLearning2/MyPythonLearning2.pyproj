@@ -23,7 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Module_1.py" />
-    <Compile Include="main.py" />
+    <Compile Include="package1\main.py" />
     <Compile Include="package1\__init__.py">
       <SubType>Code</SubType>
     </Compile>

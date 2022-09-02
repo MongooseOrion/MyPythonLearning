@@ -15,3 +15,6 @@ import urllib.request as a
 print(a.urlopen('https://cn.bing.com').read())      # 读取该网页所有内容并返回
 
 
+#
+# 从其他文件导入类
+#

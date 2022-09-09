@@ -43,12 +43,29 @@
 * [18OSModule.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/18OSModule.py)
   > 在 Windows 操作系统下的 OS 命令，包括 Powershell 和 CMD
   >
-***请注意，上述的模块命名格式不是 Python 允许的写法，如果以上述的格式命名模块，当进行相互调用时一定会发生错误，这里作如此命名仅作为顺序显示之用途，可参照下述的项目 2 来了解模块的正确命名方式。***
+***请注意，上述的模块命名格式不是 Python 允许的写法，如果以上述的格式命名模块，当进行相互调用时一定会发生错误，这里作如此命名仅作为顺序排列显示之用途，可参照下述的项目 2 来了解模块的正确命名方式。***
 ### MyPythonLearning2
 该项目中主要包含需要对模块进行相互调用的学习部分，如下述所示：<br>
 * [package1](https://github.com/MongooseOrion/MyPythonLearning/tree/master/MyPythonLearning2/package1)
-  > [Module_subP1_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/Module_subP1_1.py): 在该模块内展示了一些我自己写的函数和类，以便外部引用。<br>
-  > [main.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/main.py)：在该模块内展示了一些我自己写的函数和类，以便外部引用。
+  > [Module_subP1_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/Module_subP1_1.py): 在该模块内展示了一些自定义的函数和类，以便外部引用。<br>
+  > [main.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/main.py)：在该模块内展示了一些自定义的函数和类，以便外部引用。
 * [Module_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_1.py)
-  > 展示了如何导入并使用第三方或自定义模块
-
+  > 展示了如何导入并使用第三方或自定义模块。
+* [Module_2.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_2.py)
+  > 介绍了部分 **Python** 的内部模块和开源的外部模块，包括但不限于时间、网页、*Pyecharts*。
+* [Module_3.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_3.py)
+  > 展示对文件的操作，包括读、写、复制、编码等。
+* [Module_4.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_4.py)
+  > 展示了with 语句（上下文管理器）的用法。
+* [Module_5.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_5.py)
+  > 专用于编写实例小程序
+* [Module_6.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_6.py)
+  > 包含了一个将某一文件夹下所有 ***Excel(.xlsx)*** 文件合并为一个 ***Excel*** 文件的程序
+* 其他格式的文件
+  > 由上述模块生成的图标、图表和文本文件
+  >
+***请注意，在 Microsoft Visual Studio 中进行 Python 程序开发时，需要将安装的第三方模块存放路径加入“搜索路径”中，以便 IDE 验证从而调用。***<br><br>
+通过下述命令，可以在[ Windows 终端](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=zh-cn&gl=cn)中通过 **PowerShell** 在线安装 *Python* 第三方模块：<br>
+  > pip install [模块名]
+### MyPythonLearning3
+该项目中包含了一些复杂实例的开发文件。

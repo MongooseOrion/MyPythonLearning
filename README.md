@@ -1,7 +1,8 @@
+[*Click here to tranlate in English* (temporarily invalid)](https://github.com/MongooseOrion/MyPythonLearning/)
 # 这是为记录我的 Python 学习进程而创设的项目
 ***Python*** 这门语言的开放和随意早就有耳闻，百闻不如一见，终于有时间系统地接触这门语言了。我将花费将近两个月的时间来学习这门语言，祝我好运！<br><br>
 尽管这是为记录我自己的学习过程创建的项目，但是所有的文件全部经过系统化的处理，备注也很齐全。我本来也是像做笔记一样来写的代码，一方面也是便于我自己经常翻阅，所以它们都拥有很高的易读性。如果你想通过本项目入门 ***Python*** 也是完全没有问题的。<br><br>
-**开发环境：Visual Studio 2022** (17.3.2)
+**开发环境：Windows 10(19044.1889), Visual Studio 2022(17.3.3)**
 ## 文件章节划分
 ### MyPythonLearning1
 该项目中包含基础项目，如下述所示：<br>
@@ -37,6 +38,17 @@
   > 类与对象
 * [16ObjectClass.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/16ObjectClass.py)
   > 封装、继承、多态与object类
+* [17PackageANDDirectory.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/17PackageANDDirectory.py)
+  > 包和目录。*请注意，使用 Visual Studio 2022 构建 Python 解决方案，目录的概念是较弱的。*
+* [18OSModule.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/18OSModule.py)
+  > 在 Windows 操作系统下的 OS 命令，包括 Powershell 和 CMD
+  >
+***请注意，上述的模块命名格式不是 Python 允许的写法，如果以上述的格式命名模块，当进行相互调用时一定会发生错误，这里作如此命名仅作为顺序显示之用途，可参照下述的项目 2 来了解模块的正确命名方式。***
 ### MyPythonLearning2
 该项目中主要包含需要对模块进行相互调用的学习部分，如下述所示：<br>
-## 版本号解释
+* [package1](https://github.com/MongooseOrion/MyPythonLearning/tree/master/MyPythonLearning2/package1)
+  > [Module_subP1_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/Module_subP1_1.py): 在该模块内展示了一些我自己写的函数和类，以便外部引用。<br>
+  > [main.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/package1/main.py)：在该模块内展示了一些我自己写的函数和类，以便外部引用。
+* [Module_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_1.py)
+  > 展示了如何导入并使用第三方或自定义模块
+

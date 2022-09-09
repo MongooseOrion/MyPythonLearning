@@ -5,7 +5,7 @@
     <ProjectGuid>6147b62b-f149-4541-bd2f-bcf884c788f4</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>18OSModule.py</StartupFile>
+    <StartupFile>19JsonANDChart.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,6 +40,7 @@
     <Compile Include="16ObjectClass.py" />
     <Compile Include="17PackageANDDirectory.py" />
     <Compile Include="18OSModule.py" />
+    <Compile Include="19JsonANDChart.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

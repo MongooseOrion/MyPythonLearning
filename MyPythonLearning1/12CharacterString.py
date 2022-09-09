@@ -168,3 +168,13 @@ print(chr15.encode(encoding='UTF-8'))           # UTF-8一个中文字符占三�
 # 解码
 byte=b'\xb4\xb2\xc7\xb0\xc3\xf7\xd4\xc2\xb9\xe2'    # 某一串字符串二进制编码
 print(byte.decode(encoding='GBK'))                  # 编码解码格式一定要相同
+
+
+# 字符串分隔操作
+def inputdata():
+    indata=input('请输入年月日，以‘/’分隔：')
+    year=indata[0:4]                        # 字符串可以直接像列表一样进行分隔
+    month=indata[5:7]
+    day=indata[8:10]
+    print(year,month,day)
+inputdata()

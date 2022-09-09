@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fe7d50b6-8347-4a40-8f13-ca4063980481</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Module_6.py</StartupFile>
+    <StartupFile>Module_7.py</StartupFile>
     <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -32,6 +32,7 @@
     <Compile Include="Module_4.py" />
     <Compile Include="Module_5.py" />
     <Compile Include="Module_6.py" />
+    <Compile Include="Module_7.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
@@ -60,6 +61,7 @@
     <Content Include="alipay.ico" />
     <Content Include="copy_alipay.ico" />
     <Content Include="copy_alipay_2.ico" />
+    <Content Include="render.html" />
     <Content Include="TextFile1.txt" />
     <Content Include="TextFile2.txt" />
   </ItemGroup>

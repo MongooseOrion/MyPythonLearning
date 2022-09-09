@@ -5,6 +5,7 @@ from operator import itemgetter, truediv
 from pickle import FALSE, TRUE
 import os
 import time
+import datetime
 
 filename='student_info.txt'
 
@@ -13,6 +14,7 @@ def main():
     while True:
         time.sleep(0.7)
         menu()
+        #nowtime()
         try:
             choice=int(input('请选择功能序号：'))           # 用户功能选择
             if choice in [0,1,2,3,4,5,6,7]:
@@ -58,6 +60,7 @@ def menu():
     print('                          7. 显示所有学生信息')
     print('                          0. 退出系统')
     print('-------------------------------------------------------------------\n')
+    #print('------------------- 当前时间：',nowtime(),'-----------------------\n')
 
 
 # 录入学生信息
@@ -333,6 +336,15 @@ def show():
     else:
         print('库文件不存在，请尝试导入信息后重试。')
         return
+
+
+#
+# 显示当前时间
+#
+def nowtime():
+    time2 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print(time2,end='\r')
+    time.sleep(0.01)
 
 
 # 以主程序运行

@@ -125,3 +125,17 @@ num1=int(input('Please enter the loop number: '))
 for i in range(1,num1+1):
     print(exp6(i),end='\t')
 print('\t')
+
+
+#
+# lambda 匿名函数使用方法
+#
+def test_func(compute):
+    result=compute(1,3)
+    print(f'结果是：{result}')
+    return result
+'''
+def compute(a,b):
+    return a+b
+'''
+test_func(lambda x,y:x+y)

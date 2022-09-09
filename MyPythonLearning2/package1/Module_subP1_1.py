@@ -93,6 +93,31 @@ order_tic(row_num,row,column)
 # 时间
 #
 import datetime
-def date_cal():
-    
+import time
+def inputdata():
+    indata=input('请输入年月日，以‘/’分隔：')
+    year=indata[0:4]                        # 字符串可以直接像列表一样进行分隔
+    month=indata[5:7]
+    day=indata[8:10]
+    print(year,month,day)
+# inputdata()
 
+# 显示当前时间，使用 datetime 函数
+def nowtime():
+    while True:
+        time2 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print(time2,end='\r')           # 直接擦除上一条
+        time.sleep(0.01)
+# nowtime()
+
+# 显示当前时间，使用 time() 函数
+def nowtime2():
+    while True:
+        time1 = time.localtime(time.time())
+        print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())),end='\r')
+        time.sleep(0.01)
+nowtime2()
+
+#
+# 
+#

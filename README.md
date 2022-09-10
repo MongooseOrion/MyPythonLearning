@@ -1,4 +1,4 @@
-[*Click here to tranlate in English* (temporarily invalid)](https://github.com/MongooseOrion/MyPythonLearning/)
+[*Click here to tranlate in English* ](https://github.com/MongooseOrion/MyPythonLearning/blob/master/README_EN.md)
 # 这是为记录我的 Python 学习进程而创设的项目
 ***Python*** 这门语言的开放和随意早就有耳闻，百闻不如一见，终于有时间系统地接触这门语言了。我将花费将近两个月的时间来学习这门语言，祝我好运！<br><br>
 尽管这是为记录我自己的学习过程创建的项目，但是所有的文件全部经过系统化的处理，备注也很齐全。我本来也是像做笔记一样来写的代码，一方面也是便于我自己经常翻阅，所以它们都拥有很高的易读性。如果你想通过本项目入门 ***Python*** 也是完全没有问题的。<br><br>

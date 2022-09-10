@@ -1,4 +1,4 @@
-***readme file English version***
+[*点此切换为中文* ](https://github.com/MongooseOrion/MyPythonLearning/README.md)
 # This is a project created to record my *Python* learning progress.
 I have known the greatful language **Python** for a long time. But I didn't have much time before. Now I am free to learning **Python**, so I plan to spend nearly 2 mothons to learn. Good luck to me!<br><br>
 All files are well-structured which means you can understand every single line easily. If you are freshman in **Python**, just like me, you can use my files to help you learn. God bless you.<br><br>
@@ -40,6 +40,6 @@ This section contains basic part in **Python**, as shown in the following:
 * [17PackageANDDirectory.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/17PackageANDDirectory.py)
   > Package and dictory *Caution: Visual Studio 2022 used as default for 'solution manager view'*
 * [18OSModule.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning1/18OSModule.py)
-  > 在 Windows 操作系统下的 OS 命令，including Powershell and CMD
+  > Windows native OS command，including Powershell and CMD
   >
-***请注意，上述的模块命名格式不是 Python 允许的写法，如果以上述的格式命名模块，当进行相互调用时一定会发生错误，这里作如此命名仅作为顺序排列显示之用途，可参照下述的项目 2 来了解模块的正确命名方式。***
+***Caution: THe above-mentioned module naming format is not a writing method allowed by Python. If modules are named in the above-mentioned format, errors will occur when calling each other. The naming here is only for sequential display. Please refer to Item 2 below for the correct module naming method.***

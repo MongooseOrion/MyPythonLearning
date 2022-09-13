@@ -61,9 +61,9 @@
     <Content Include="alipay.ico" />
     <Content Include="copy_alipay.ico" />
     <Content Include="copy_alipay_2.ico" />
-    <Content Include="render.html" />
     <Content Include="TextFile1.txt" />
     <Content Include="TextFile2.txt" />
+    <Content Include="全国疫情地图.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

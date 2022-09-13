@@ -3,6 +3,7 @@
 #
 
 import sys
+from turtle import position
 print(dir(sys))                                 # 查看 sys 内的所有函数
 print('True的字节数：',sys.getsizeof(True))      # 获取指定字符的数据占用量
 
@@ -38,5 +39,125 @@ line.set_global_opts(                   # 配置参数
     # 视觉映射
     visualmap_opts=VisualMapOpts(is_show=True)
 )
-line.render()                           # 绘制图像，生成 HTML 文件
+line.render('测试折线图.html')                        # 绘制图像，生成 HTML 文件
+
+
+#
+# 构建地图
+#
+
+from pyecharts.charts import Map 
+from pyecharts.options import VisualMapOpts
+map=Map()
+data=[
+    ('北京',100),
+    ('重庆',101),
+    ('香港',102),
+    ('海南',103),
+    ('广东',105)
+]
+
+map.add('测试地图', data, 'china')
+map.set_global_opts(
+    visualmap_opts = VisualMapOpts(
+        is_show=True, 
+        is_piecewise=True,  # 手动校正图例参数
+        pieces=[
+            {'min':1,'max':9,'label':'1-9','color':'#CCFFFF'},
+            {'min':10,'max':99,'label':'10-99','color':'#FF6666'},
+            {'min':100,'max':500,'label':'100-500','color':'#990033'}
+        ]
+    )
+)
+
+map.render('中国地图测试.html')
+
+'''
+# 全国疫情数据
+import json
+from pyecharts.charts import Map
+from pyecharts.options import *
+f = open('疫情.txt', 'r', encoding = 'utf-8')
+data = f.read()
+f.close()
+
+data_dic = json.loads(data)                                 # 将数据转为 python 字典
+province_list = data_dic['areaTree'][0]['children']         # 从字典中取出省份数据
+
+data_list = []
+for province_data in province_list:                         # 分别获取省份、确诊人数
+    province_name = province_data['name']
+    province_confirm = province_data['total']['confirm']
+    data_list.append((province_name, province_confirm))     # 将省份和确诊人数作为元组存入列表
+# print(data_list)
+
+map = Map()
+map.add('各省份确诊人数', data_list, 'china')
+map.set_global_opts(
+    title_opts = TitleOpts(title='全国疫情地图'),
+    visualmap_opts = VisualMapOpts(
+        is_show=True,               # 是否显示视觉映射
+        is_piecewise=True,          # 是否分段
+        pieces=[                    # 各分段数
+            {'min':1,'max':99,'label':'1-9','color':'#CCFFFF'},
+            {'min':100,'max':999,'label':'100-999','color':'#990033'},
+            {'min':1000,'max':4999,'label':'1000-4999','color':'#107c42'},
+            {'min':5000,'max':9999,'label':'5000-9999','color':'#8a02a7'},
+            {'min':10000,'max':99999,'label':'10000-99999','color':'#849b91'},
+            {'min':100000,'label':'100000 以上','color':'#1285dc'}
+        ]
+    )
+)
+
+map.render('全国疫情地图.html')
+'''
+'''
+# 省级地图绘制
+import json
+from pyecharts.charts import Map
+from pyecharts.options import *
+f = open('疫情.txt','r',encoding='utf-8')
+data = f.read()
+f.close()
+data_dic = json.loads(data)
+cities_data = data_dic['areaTree'][0]['children'][3]['children']
+
+data_lst = []
+for city_data in cities_data:
+    city_name = city_data['name']+'市'
+    city_cofirm = city_data['total']['confirm']
+    data_lst.append((city_name, city_cofirm))
+# print(data_lst)
+data_lst.append(('济源市', 5))             # 无数据，手动添加
+
+map = Map()
+map.add('河南省确诊人数', data_lst, '河南')
+map.set_global_opts(
+    title_opts = TitleOpts(title='河南疫情地图'),
+    visualmap_opts = VisualMapOpts(
+        is_show=True,               # 是否显示视觉映射
+        is_piecewise=True,          # 是否分段
+        pieces=[                    # 各分段数
+            {'min':1,'max':99,'label':'1-9','color':'#CCFFFF'},
+            {'min':100,'max':999,'label':'100-999','color':'#990033'},
+            {'min':1000,'max':4999,'label':'1000-4999','color':'#107c42'},
+            {'min':5000,'max':9999,'label':'5000-9999','color':'#8a02a7'},
+            {'min':10000,'max':99999,'label':'10000-99999','color':'#849b91'},
+            {'min':100000,'label':'100000 以上','color':'#1285dc'}
+        ]
+    )
+)
+map.render('河南省疫情地图.html')
+'''
+
+#
+# 构建柱状图
+#
+from pyecharts.charts import Bar
+from pyecharts.options import LabelOpts
+bar = Bar() 
+bar.add_xaxis(['中国', '美国', '英国'])
+bar.add_yaxis('GDP', [30,20,10], label_opts = LabelOpts(position = 'right'))    # 数字显示在右边
+bar.reversal_axis()                         # 翻转 x，y 轴
+bar.render('柱状图测试.html')
 

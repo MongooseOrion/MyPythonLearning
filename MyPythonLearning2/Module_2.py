@@ -204,6 +204,10 @@ timeline.render('基础时间线柱状图.html')
 #
 # 动态柱状图
 #
+from pyecharts.charts import Bar, Timeline
+from pyecharts.options import *
+
+
 file1 = open('1960-2019全球GDP数据.csv','r',encoding='GB2312')
 data_lines = file1.readlines()
 file1.close()
@@ -213,8 +217,42 @@ data_lines.pop(0)
 # { 1960:[[美国, 123],[中国, 321]...], 1961:[[美国,123],...],...}
 data_dic = {}
 for lines in data_lines:
-    year = int(line.split(',')[0])                  # 年份
-    country = line.split(',')[1]                    # 国家
-    gdp = float(line.split(',')[2])                 # 科学计数法可用 float 强制类型转换
+    year = int(lines.split(',')[0])                 # 年份
+    country = lines.split(',')[1]                   # 国家
+    gdp = float(lines.split(',')[2])                # 科学计数法可用 float 强制类型转换
     # 判断是否要加列表
+    try:
+        data_dic[year].append([country, gdp]) 
+    except KeyError:
+        data_dic[year] = []
+        data_dic[year].append([country, gdp]) 
 
+timeline = Timeline()
+# 由于字典中 key 的位置不是固定的，首先排序确保年份按顺序
+sorted_year_list = sorted(data_dic.keys())
+
+for year in sorted_year_list:
+    data_dic[year].sort(key=lambda element:element[1], reverse=True)    # 按键值排序
+    year_data = data_dic[year][0:8]                                 # 选择出前 8 位数据
+    x_data = []                                         # 国家
+    y_data = []                                         # GDP 数值
+    for country_gdp in year_data:
+        x_data.append(country_gdp[0])                   # x 轴数据
+        y_data.append(country_gdp[1]/100000000)         # y 轴数据
+
+    # 构建图像
+    bar = Bar()
+    bar.add_xaxis(x_data)
+    bar.add_yaxis('GDP(亿)', y_data, label_opts = LabelOpts(position='right'))
+    bar.reversal_axis()
+
+    timeline.add(bar, str(year))
+
+timeline.add_schema(
+    play_interval=500,
+    is_timeline_show=True,
+    is_auto_play=True,
+    is_loop_play=False
+    )
+
+timeline.render('动态柱状图1960-2019GDP.html')

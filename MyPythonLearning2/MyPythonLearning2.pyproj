@@ -10,7 +10,7 @@
     <OutputPath>.</OutputPath>
     <Name>MyPythonLearning2</Name>
     <RootNamespace>MyPythonLearning2</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,6 +58,7 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1960-2019全球GDP数据.csv" />
     <Content Include="alipay.ico" />
     <Content Include="copy_alipay.ico" />
     <Content Include="copy_alipay_2.ico" />

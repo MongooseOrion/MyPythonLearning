@@ -2,6 +2,7 @@
 # 导入 Python 内置模块
 #
 
+from sqlite3 import Time
 import sys
 from turtle import position
 print(dir(sys))                                 # 查看 sys 内的所有函数
@@ -160,4 +161,60 @@ bar.add_xaxis(['中国', '美国', '英国'])
 bar.add_yaxis('GDP', [30,20,10], label_opts = LabelOpts(position = 'right'))    # 数字显示在右边
 bar.reversal_axis()                         # 翻转 x，y 轴
 bar.render('柱状图测试.html')
+
+
+#
+# 按时间线绘制柱状图
+#
+from pyecharts.charts import Bar, Timeline
+from pyecharts.options import *
+from pyecharts.globals import ThemeType
+
+bar1 = Bar() 
+bar1.add_xaxis(['中国', '美国', '英国'])
+bar1.add_yaxis('GDP', [30,20,10], label_opts = LabelOpts(position = 'right'))
+bar1.reversal_axis()
+
+bar2 = Bar() 
+bar2.add_xaxis(['中国', '美国', '英国'])
+bar2.add_yaxis('GDP', [40,30,90], label_opts = LabelOpts(position = 'right'))    # 数字显示在右边
+bar2.reversal_axis()
+
+bar3 = Bar() 
+bar3.add_xaxis(['中国', '美国', '英国'])
+bar3.add_yaxis('GDP', [100,80,60], label_opts = LabelOpts(position = 'right'))    # 数字显示在右边
+bar3.reversal_axis()
+
+timeline = Timeline(
+    {'theme': ThemeType.LIGHT}              # 选择配色主题
+)
+timeline.add(bar1, 'Point 1')
+timeline.add(bar2, 'Point 2')
+timeline.add(bar3, 'Point 3')
+
+timeline.add_schema(                        # 自动播放设置（循环）
+    play_interval=1000,                     # 单位 ms
+    is_timeline_show=True,                  
+    is_auto_play=True,
+    is_loop_play=True
+)
+timeline.render('基础时间线柱状图.html')
+
+
+#
+# 动态柱状图
+#
+file1 = open('1960-2019全球GDP数据.csv','r',encoding='GB2312')
+data_lines = file1.readlines()
+file1.close()
+
+data_lines.pop(0)
+# 将数据转换为字典存储，格式为：
+# { 1960:[[美国, 123],[中国, 321]...], 1961:[[美国,123],...],...}
+data_dic = {}
+for lines in data_lines:
+    year = int(line.split(',')[0])                  # 年份
+    country = line.split(',')[1]                    # 国家
+    gdp = float(line.split(',')[2])                 # 科学计数法可用 float 强制类型转换
+    # 判断是否要加列表
 

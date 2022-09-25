@@ -6,6 +6,10 @@ dic2 = dict(name='Jack',score=76)                   # 第二种
 print('dic1结果1：',dic1)
 print('dic2结果1：',dic2)
 
+# 变量注解
+my_dic1: dict[str,int] = {'Li Hua':98}
+
+
 # 查找字典内元素
 print(dic1['Mongoose'])         # 不存在则报错
 print(dic1.get('Jim'))          # 不存在则返回none，推荐此种方法

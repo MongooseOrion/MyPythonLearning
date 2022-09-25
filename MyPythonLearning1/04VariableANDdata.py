@@ -10,6 +10,14 @@ print('类型', type(name))
 print('值', name)
 
 
+# 变量类型注解
+# 语法：变量名:类型=值
+var1: int = 10
+var2: str = 'China'
+print('var1 is:',var1)
+print('var2 is:',var2)
+
+
 # Data type
 print(0b10001001)   # 二进制
 print(0o123456)     # 八进制

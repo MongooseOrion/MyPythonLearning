@@ -8,6 +8,18 @@ class Student:                      # class 之后为自定义类名
         self.name=name              # 实例属性
         self.age=age
 
+    def __str__(self):              # 利用 str 方法可以将对象在 print 后覆写
+        return f'Student 类对象, name:{self.name}, age:{self.age}' 
+
+    def __lt__(self, other):        # 用于比较对象（数字）的大小（只支持小于和大于）
+        return self.age < other.age # 返回 True 或 False
+
+    def __le__(self, other):        # 用于比较对象大小（支持大于等于和小于等于）
+        return self.age <= other.age
+
+    def __eq__(self, other):        # 用于检测两对象是否相等，不加该方法则比较内存地址
+        return self.age == other.age
+
     def eat(self):                  # 实例方法，括号内 self 是默认参数
         print('They are eating.')
 
@@ -25,6 +37,8 @@ class Student:                      # class 之后为自定义类名
 #
 stu1=Student('LiHua',21)            # 创建一个Student类的对象
 stu1.eat()                          # 调用实例方法，对象名.方法名()
+print(stu1)                         # 由 str 方法控制该指令，类中没有 str 方法则输出地址
+print(str(stu1))                    # 由 str 方法控制该指令
 print(stu1.name)                    # 显示属性
 print(stu1.age)
 

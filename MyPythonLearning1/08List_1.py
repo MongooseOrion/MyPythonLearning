@@ -1,4 +1,13 @@
-﻿
+﻿#
+# 列表类型注解
+#
+# 语法：变量名:类型=值
+my_list: list = [1,2,34]
+my_list2: list[int, str] = [1,'galaxy']
+print('my_list2 is: ',my_list2)
+
+
+# 创建列表
 lst1=['hello','world',100,1.2]                # 列表用法1
 lst2=list(['hello','world',98,'hello'])       # 列表用法2
 print('指定元素显示为：',lst1[0],lst1[-4])      # 表示元素相同

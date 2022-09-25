@@ -10,6 +10,10 @@ print('tup2结果1：',tup2)
 
 print('tup1索引1为：',tup1[1])          # 元组内单个元素查找方法
 
+# 变量注解
+my_tuple: tuple[str, int, bool] = ('Galaxy', 34, True)  # 元组如果想要标容器类型，则必须每个
+                                                        # 值都要标，其他的则不需要
+
 
 # 元组不允许修改，但元组内如果包含列表或字典，则列表内元素可被修改
 tup2[3][1]=2                    # 对元组中的列表值进行修改
@@ -28,7 +32,7 @@ print('<-------------------------------------------->')
 # 集合 Set
 # 
 # 集合创建
-set1={'Galaxy','Python','Tablet'}       # 集合元素排列不一定按顺序
+set1={'Galaxy','Python','Tablet'}       # 集合元素在计算机中的排列不一定按顺序
 set2=set(range(6))
 set3=set([9,2,5,3,8,6,1,1,10])          # 将列表内元素逐个转为集合元素，忽略重复元素
 set4=set((98,4,3,7,7,4,1,2,7))          # 将元组内元素逐个转为集合元素
@@ -39,6 +43,11 @@ print('set2的结果1：',set2)
 print(set3)
 print(set4)
 print(set5)
+
+
+# 变量注解
+my_set: set[int, str] = {1, 'true'}
+print('my_set is: ',my_set)
 
 
 # 集合数据操作

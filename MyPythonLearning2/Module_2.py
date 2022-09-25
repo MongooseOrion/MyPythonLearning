@@ -150,7 +150,7 @@ map.set_global_opts(
 )
 map.render('河南省疫情地图.html')
 '''
-
+'''
 #
 # 构建柱状图
 #
@@ -199,13 +199,14 @@ timeline.add_schema(                        # 自动播放设置（循环）
     is_loop_play=True
 )
 timeline.render('基础时间线柱状图.html')
-
+'''
 
 #
 # 动态柱状图
 #
 from pyecharts.charts import Bar, Timeline
 from pyecharts.options import *
+from pyecharts.globals import *
 
 
 file1 = open('1960-2019全球GDP数据.csv','r',encoding='GB2312')
@@ -227,7 +228,7 @@ for lines in data_lines:
         data_dic[year] = []
         data_dic[year].append([country, gdp]) 
 
-timeline = Timeline()
+timeline = Timeline({'theme': ThemeType.LIGHT})
 # 由于字典中 key 的位置不是固定的，首先排序确保年份按顺序
 sorted_year_list = sorted(data_dic.keys())
 
@@ -242,10 +243,16 @@ for year in sorted_year_list:
 
     # 构建图像
     bar = Bar()
+    x_data.reverse()
+    y_data.reverse()
     bar.add_xaxis(x_data)
     bar.add_yaxis('GDP(亿)', y_data, label_opts = LabelOpts(position='right'))
     bar.reversal_axis()
+    
+    bar.set_global_opts(
+        title_opts=TitleOpts(title=f'{year}年全球前8 GDP数据')
 
+    )
     timeline.add(bar, str(year))
 
 timeline.add_schema(

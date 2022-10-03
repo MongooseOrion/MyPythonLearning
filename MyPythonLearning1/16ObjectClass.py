@@ -97,6 +97,40 @@ def exp2(obj):
 exp2(Cat())                                 # 调用该函数
 exp2(Person2())
 exp2(Animal())
+print('<--------------------------------------------------------->')
+
+
+#
+# 抽象类：父级只定义方法，而具体实现由子类完成
+#
+class AC:
+    def cool_wind(self):
+        pass
+    def hot_wind(self):
+        pass
+    def swing_LR(self):
+        pass
+
+class MEDIA_AC(AC):
+    def cool_wind(self):
+        print('美的空调制冷模式')
+    def hot_wind(self):
+        print('美的空调制热模式')
+    def swing_LR(self):
+        print('美的空调上下扫风')
+class GREE_AC(AC):
+    def cool_wind(self):
+        print('格力空调制冷模式')
+    def hot_wind(self):
+        print('格力空调制热模式')
+    def swing_LR(self):
+        print('格力空调上下扫风')
+
+def make_cool(ac:AC):
+    ac.cool_wind()
+
+make_cool(GREE_AC())
+print('<------------------------------------------------->')
 
 
 #

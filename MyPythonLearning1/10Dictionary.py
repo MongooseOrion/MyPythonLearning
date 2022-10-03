@@ -10,6 +10,13 @@ print('dic2结果1：',dic2)
 my_dic1: dict[str,int] = {'Li Hua':98}
 
 
+#
+# Union 类型注解：在字典、列表、函数形参有多种类型时使用
+#
+from typing import Union
+my_dic2: dict[str, Union[str, int]] = {'name':'LiHua','age':19}
+
+
 # 查找字典内元素
 print(dic1['Mongoose'])         # 不存在则报错
 print(dic1.get('Jim'))          # 不存在则返回none，推荐此种方法

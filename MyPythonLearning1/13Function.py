@@ -5,7 +5,13 @@ from asyncio import events
 from multiprocessing import Event
 
 
-def x2c(x):                     # 创建一个二次函数y=x^2+1
+# 函数（方法）类型注解语法
+'''
+def 函数方法名(形参名: 类型, 形参名: 类型)->返回值类型:
+    pass
+'''
+
+def x2c(x:int)->int:                 # 创建一个二次函数y=x^2+1
     y=x**2+1
     return y
 print('the result1 is:',x2c(3))

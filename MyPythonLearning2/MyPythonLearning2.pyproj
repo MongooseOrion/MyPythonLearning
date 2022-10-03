@@ -33,9 +33,17 @@
     <Compile Include="Module_5.py" />
     <Compile Include="Module_6.py" />
     <Compile Include="Module_7.py" />
+    <Compile Include="package2\data_define.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package2\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package2\file_define.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
+    <Folder Include="package2\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
@@ -62,6 +70,8 @@
     <Content Include="alipay.ico" />
     <Content Include="copy_alipay.ico" />
     <Content Include="copy_alipay_2.ico" />
+    <Content Include="package2\2011年1月销售数据.txt" />
+    <Content Include="package2\2011年2月销售数据JSON.txt" />
     <Content Include="TextFile1.txt" />
     <Content Include="TextFile2.txt" />
     <Content Include="全国疫情地图.html" />

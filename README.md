@@ -52,11 +52,11 @@
 * [Module_1.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_1.py)
   > 展示了如何导入并使用第三方或自定义模块。
 * [Module_2.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_2.py)
-  > 介绍了部分 **Python** 的内部模块和开源的外部模块，包括但不限于时间、网页、*Pyecharts*。
+  > 介绍了部分 **Python** 的内部模块和开源的外部模块，包括但不限于时间、网页、[*Pyecharts*](https://pyecharts.org/#/zh-cn/intro)。
 * [Module_3.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_3.py)
   > 展示对文件的操作，包括读、写、复制、编码等。
 * [Module_4.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_4.py)
-  > 展示了with 语句（上下文管理器）的用法。
+  > 展示了 with 语句（上下文管理器）的用法。
 * [Module_5.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_5.py)
   > 专用于编写实例小程序
 * [Module_6.py](https://github.com/MongooseOrion/MyPythonLearning/blob/master/MyPythonLearning2/Module_6.py)

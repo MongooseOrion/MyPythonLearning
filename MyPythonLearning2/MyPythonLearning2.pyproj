@@ -5,12 +5,12 @@
     <ProjectGuid>fe7d50b6-8347-4a40-8f13-ca4063980481</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>Module_7.py</StartupFile>
-    <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages</SearchPath>
+    <SearchPath>package1;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages;..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MyPythonLearning2</Name>
     <RootNamespace>MyPythonLearning2</RootNamespace>
-    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +40,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="package2\file_define.py" />
+    <Compile Include="package2\main.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
@@ -72,10 +73,14 @@
     <Content Include="copy_alipay_2.ico" />
     <Content Include="package2\2011年1月销售数据.txt" />
     <Content Include="package2\2011年2月销售数据JSON.txt" />
+    <Content Include="package2\销售额情况.html" />
     <Content Include="TextFile1.txt" />
     <Content Include="TextFile2.txt" />
     <Content Include="全国疫情地图.html" />
     <Content Include="动态柱状图1960-2019GDP.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

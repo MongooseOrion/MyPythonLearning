@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="stusystem.py" />
+    <Compile Include="calculator.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="student_info.txt" />

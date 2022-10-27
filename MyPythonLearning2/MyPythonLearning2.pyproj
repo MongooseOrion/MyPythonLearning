@@ -41,10 +41,15 @@
     </Compile>
     <Compile Include="package2\file_define.py" />
     <Compile Include="package2\main.py" />
+    <Compile Include="package3\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package3\fileoper.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="package1\" />
     <Folder Include="package2\" />
+    <Folder Include="package3\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="1960-2019全球GDP数据.csv" />

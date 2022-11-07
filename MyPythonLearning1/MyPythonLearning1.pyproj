@@ -41,6 +41,13 @@
     <Compile Include="17PackageANDDirectory.py" />
     <Compile Include="18OSModule.py" />
     <Compile Include="19JsonANDChart.py" />
+    <Compile Include="regular_expression\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="regular_expression\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="regular_expression\notes.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

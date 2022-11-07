@@ -17,10 +17,10 @@ print(pi)
 #
 # 选择导入自定义模块，平级的模块到模块
 #
-import package1.main as main         # 全部导入
+import package1.main as main                    # 全部导入
 print(main.add(10,20))
 
-from package1.main import div                # 部分导入
+from package1.main import div                   # 部分导入
 print(main.div(90,3))
 
 

@@ -1,3 +1,0 @@
-{'id': '1659474', 'name': 'Michael', 'eng_lst': 79, 'py_lst': 90, 'java_lst': 56}
-{'id': '1659476', 'name': 'Kim', 'eng_lst': '89', 'py_lst': '99', 'java_lst': 78}
-{'id': '1659475', 'name': 'Jim', 'eng_lst': 76, 'py_lst': 68, 'java_lst': 66}
